@@ -6,7 +6,7 @@ Baseurl = 'https: //0head.Blog'
 defaultcontentlanguage = "en"
 
 # theme
-theme = "ublogger"
+theme = "uBlogger"
 
 # themes directory
 #themesdir = "../.."
