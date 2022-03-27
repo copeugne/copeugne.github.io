@@ -1,4 +1,4 @@
-baseURL = 'https://copeugne.github.io'
+baseURL = 'https://0head.blog'
 languageCode = 'en-us'
 title = 'My blog'
 theme = "uBlogger"
