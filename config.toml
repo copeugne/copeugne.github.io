@@ -1,4 +1,7 @@
 baseURL = 'https://copeugne.github.io'
 languageCode = 'en-us'
-title = 'My website'
-theme = "PaperMod"
+title = 'My blog'
+theme = "uBlogger"
+
+[params]
+  version = "2.0.X"
