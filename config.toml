@@ -1,7 +1,716 @@
-baseURL = 'https://0head.blog'
-languageCode = 'en-us'
-title = 'My blog'
-theme = "uBlogger"
+Baseurl = 'https: //0head.Blog'
+
+# [en, zh-cn, fr, pl, ...] determines default content language
+# [en, zh-cn, fr, pl, ...]
+
+defaultcontentlanguage = "en"
+
+# theme
+theme = "ublogger"
+
+# themes directory
+#themesdir = "../.."
+
+# website title
+title = "ublogger"
+
+# whether to use robots.Txt
+enablerobotstxt = true
+
+# whether to use git commit log
+enablegitinfo = true
+
+# whether to use emoji code
+enableemoji = true
+
+[languages]
+[languages.En]
+weight = 1
+# language code
+languagecode = "en"
+# language name
+languagename = "english"
+# whether to include chinese/japanese/korean
+hascjklanguage = false
+# default amount of posts in each pages
+paginate = 12
+# copyright description used only for seo schema
+copyright = "this work is licensed under a creative commons attribution-noncommercial 4.0 international license."
+# menu config
+[languages.En.Menu]
+[[languages.En.Menu.Main]]
+identifier = "posts"
+# you can add extra information before the name (html format is supported), such as icons
+pre = ""
+# you can add extra information after the name (html format is supported), such as icons
+post = ""
+name = "posts"
+url = "/posts/"
+# title will be shown when you hover on this menu link.
+Title = ""
+weight = 1
+[[languages.En.Menu.Main]]
+identifier = "tags"
+pre = ""
+post = ""
+name = "tags"
+url = "/tags/"
+title = ""
+weight = 2
+[[languages.En.Menu.Main]]
+identifier = "categories"
+pre = ""
+post = ""
+name = "categories"
+url = "/categories/"
+title = ""
+weight = 3
+[[languages.En.Menu.Main]]
+identifier = "documentation"
+pre = ""
+post = ""
+name = "docs"
+url = "/categories/documentation/"
+title = ""
+weight = 4
+[[languages.En.Menu.Main]]
+identifier = "about"
+pre = ""
+post = ""
+name = "about"
+url = "/about/"
+title = ""
+weight = 5
+[[languages.En.Menu.Main]]
+identifier = "github"
+pre = "<i class='fab fa-github fa-fw'></i>"
+post = ""
+name = ""
+url = "https: //github.Com/upagge/ublogger"
+title = "github"
+weight = 6
+[languages.En.Params]
+# site description
+description = "about ublogger theme"
+# site keywords
+keywords = ["theme", "hugo"]
+# app icon config
+[languages.En.Params.App]
+# optional site title override for the app when added to an ios home screen or android launcher
+title = "ublogger"
+# whether to omit favicon resource links
+nofavicon = false
+# modern svg favicon to use in place of older style .Png and .Ico files
+svgfavicon = ""
+# android browser theme color
+themecolor = "#ffffff"
+# safari mask icon color
+iconcolor = "#5bbad5"
+# windows v8-10 tile color
+tilecolor = "#da532c"
+# search config
+[languages.En.Params.Search]
+enable = true
+# type of search engine ("lunr", "algolia")
+type = "algolia"
+# max index length of the chunked content
+contentlength = 4000
+# placeholder of the search bar
+placeholder = ""
+# max number of results length
+maxresultlength = 10
+# snippet length of the result
+snippetlength = 30
+# html tag name of the highlight part in results
+highlighttag = "em"
+# whether to use the absolute url based on the baseurl in search index
+absoluteurl = false
+[languages.En.Params.Search.Algolia]
+index = "index.En"
+appid = "pasdmwalpk"
+searchkey = "b42948e51daaa93df92381c8e2ac0f93"
+# home page config
+[languages.En.Params.Home]
+# amount of rss pages
+rss = 10
+# home page profile
+[languages.En.Params.Home.Profile]
+enable = true
+# gravatar email for preferred avatar in home page
+gravataremail = ""
+# url of avatar shown in home page
+avatarurl = "/images/avatar.Png"
+# title shown in home page (html format is supported)
+title = "ublogger | hugo theme"
+# subtitle shown in home page (html format is supported)
+subtitle = "a clean, elegant but advanced hugo theme"
+# whether to show social links
+social = true
+# disclaimer (html format is supported)
+disclaimer = ""
+# home page posts
+[languages.En.Params.Home.Posts]
+enable = true
+# special amount of posts in each home posts page
+paginate = 6
+# social config in home page
+[languages.En.Params.Social]
+github = "xxxx"
+linkedin = ""
+twitter = "xxxx"
+instagram = "xxxx"
+facebook = "xxxx"
+telegram = "xxxx"
+medium = ""
+gitlab = ""
+youtubelegacy = "xxxx"
+youtubecustom = ""
+youtubechannel = ""
+tumblr = ""
+quora = ""
+keybase = ""
+pinterest = ""
+reddit = ""
+codepen = ""
+freecodecamp = ""
+bitbucket = ""
+stackoverflow = ""
+weibo = ""
+odnoklassniki = ""
+vk = ""
+flickr = ""
+xing = ""
+snapchat = ""
+soundcloud = ""
+spotify = ""
+bandcamp = ""
+paypal = ""
+fivehundredpx = ""
+mix = ""
+goodreads = ""
+lastfm = ""
+foursquare = ""
+hackernews = ""
+kickstarter = ""
+patreon = ""
+steam = ""
+twitch = ""
+strava = ""
+skype = ""
+whatsapp = ""
+zhihu = ""
+douban = ""
+angellist = ""
+slidershare = ""
+jsfiddle = ""
+deviantart = ""
+behance = ""
+dribbble = ""
+wordpress = ""
+vine = ""
+googlescholar = ""
+researchgate = ""
+thingiverse = ""
+devto = ""
+gitea = ""
+xmpp = ""
+matrix = ""
+bilibili = ""
+email = "xxxx@xxxx.Com"
+dockerhub = ""
+discord = "xxxxxxxxx"
+leanpub = ""
+udemy = ""
+rss = true
+[languages.En.Params.Social.Mastodon]
+id = "@xxxx"
+prefix = "https: //mastodon.Technology/"
 
 [params]
-  version = "2.0.X"
+# ublogger theme version
+version = "2.0.X"
+# site default theme ("light", "dark", "auto")
+defaulttheme = "auto"
+# public git repo url only then enablegitinfo is true
+#  git , enablegitinfo  true 
+gitrepo = "https: //github.Com/upagge/dolboblog-theme"
+# which hash function used for sri, when empty, no sri is used ("sha256", "sha384", "sha512", "md5")
+#  sri,  sri ("sha256", "sha384", "sha512", "md5")
+fingerprint = ""
+# date format
+# 
+dateformat = "2006-01-02"
+# website images for open graph and twitter cards
+# ,  open graph  twitter cards
+images = ["/logo.Png"]
+
+# header config
+# 
+[params.Header]
+# desktop header mode ("fixed", "normal", "auto")
+#  ("fixed", "normal", "auto")
+desktopmode = "fixed"
+# mobile header mode ("fixed", "normal", "auto")
+#  ("fixed", "normal", "auto")
+mobilemode = "auto"
+# header title config
+# 
+[params.Header.Title]
+# url of the logo
+# logo  url
+logo = ""
+# title name
+# 
+name = "ublogger"
+# you can add extra information before the name (html format is supported), such as icons
+#  ( html ) , 
+pre = "<i class='fas fa-pencil-alt fa-fw'></i>"
+# you can add extra information after the name (html format is supported), such as icons
+#  ( html ) , 
+post = ""
+
+# footer config
+# 
+[params.Footer]
+enable = true
+# custom content (html format is supported)
+#  ( html )
+custom = ''
+# whether to show hugo and theme info
+#  hugo 
+hugo = true
+# whether to show copyright info
+# 
+copyright = true
+# whether to show the author
+# 
+author = true
+# site creation time
+# 
+since = 2019
+# icp info only in china (html format is supported)
+# icp , ( html )
+icp = ""
+# license info (html format is supported)
+#  ( html )
+license= '<a rel="license external nofollow noopener noreffer" href="https: //creativecommons.Org/licenses/by-nc/4.0/" target="_blank">cc by-nc 4.0</a>'
+
+# section (all posts) page config
+# section () 
+[params.Section]
+# special amount of posts in each section page
+# section 
+paginate = 20
+# date format (month and day)
+#  ()
+dateformat = "01-02"
+# amount of rss pages
+# rss 
+rss = 10
+
+# list (category or tag) page config
+# list () 
+[params.List]
+# special amount of posts in each list page
+# list 
+paginate = 20
+# date format (month and day)
+#  ()
+dateformat = "01-02"
+# amount of rss pages
+# rss 
+rss = 10
+
+# comment config
+# 
+[params.Comment]
+enable = true
+[params.Comment.Remark42]
+enable = true
+host = "https: //comments.Upagge.Ru"
+site = "documentation"
+locale = "en"
+# disqus comment config (https: //disqus.Com/)
+# disqus  (https: //disqus.Com/)
+[params.Comment.Disqus]
+enable = false
+# disqus shortname to use disqus in posts
+# disqus  shortname, disqus 
+shortname = ""
+# gitalk comment config (https: //github.Com/gitalk/gitalk)
+# gitalk  (https: //github.Com/gitalk/gitalk)
+[params.Comment.Gitalk]
+enable = false
+owner = ""
+repo = ""
+clientid = ""
+clientsecret = ""
+# valine comment config (https: //github.Com/xcss/valine)
+# valine  (https: //github.Com/xcss/valine)
+[params.Comment.Valine]
+enable = false
+appid = "qgzwqxoqs5john4rgpokr2mr-mdyxbmmi"
+appkey = "wbmogyjtbquswvflh6l8iebr"
+placeholder = ""
+avatar = "mp"
+meta= ""
+pagesize = 10
+lang = ""
+visitor = true
+recordip = true
+highlight = true
+enableqq = false
+serverurls = "https: //"
+# emoji data file name, default is "google.Yml"
+# ("apple.Yml", "google.Yml", "facebook.Yml", "twitter.Yml")
+# located in "themes/ublogger/assets/data/emoji/" directory
+# you can store your own data files in the same path under your project:
+# "assets/data/emoji/"
+# emoji ,  "google.Yml"
+# ("apple.Yml", "google.Yml", "facebook.Yml", "twitter.Yml")
+#  "themes/ublogger/assets/data/emoji/" 
+# :
+# "assets/data/emoji/"
+emoji = ""
+# facebook comment config (https: //developers.Facebook.Com/docs/plugins/comments)
+# facebook  (https: //developers.Facebook.Com/docs/plugins/comments)
+[params.Comment.Facebook]
+enable = false
+width = "100%"
+numposts = 10
+appid = ""
+languagecode = ""
+# telegram comments config (https: //comments.App/)
+# telegram comments  (https: //comments.App/)
+[params.Comment.Telegram]
+enable = false
+siteid = ""
+limit = 5
+height = ""
+color = ""
+colorful = true
+dislikes = false
+outlined = false
+# commento comment config (https: //commento.Io/)
+# commento comment  (https: //commento.Io/)
+[params.Comment.Commento]
+enable = false
+# utterances comment config (https: //utteranc.Es/)
+# utterances comment  (https: //utteranc.Es/)
+[params.Comment.Utterances]
+enable = false
+# owner/repo
+repo = ""
+issueterm = "pathname"
+label = ""
+lighttheme = "github-light"
+darktheme = "github-dark"
+# page config
+# 
+[params.Page]
+# whether to hide a page from home page
+# 
+hiddenfromhomepage = false
+# whether to hide a page from search results
+# 
+hiddenfromsearch = false
+# whether to enable twemoji
+#  twemoji
+twemoji = false
+# whether to enable the ruby extended syntax
+#  ruby 
+ruby = true
+# whether to enable the fraction extended syntax
+#  fraction 
+fraction = true
+# whether to enable the fontawesome extended syntax
+#  fontawesome 
+fontawesome = true
+# whether to show link to raw markdown content of the content
+#  markdown 
+linktomarkdown = true
+# whether to show the full text content in rss
+#  rss 
+rssfulltext = false
+# table of the contents config
+# 
+[params.Page.Toc]
+# whether to enable the table of the contents
+# 
+enable = true
+# whether to keep the static table of the contents in front of the post
+# 
+keepstatic = false
+# whether to make the table of the contents in the sidebar automatically collapsed
+# 
+auto = true
+# code config
+# 
+[params.Page.Code]
+# whether to show the copy button of the code block
+# 
+copy = true
+# the maximum number of lines of displayed code by default
+# 
+maxshownlines = 10
+# katex mathematical formulas config (katex https: //katex.Org/)
+# katex  (katex https: //katex.Org/)
+[params.Page.Math]
+enable = false
+# default block delimiter is $$ ...$$ and \\[ ...\\]
+#  $$ ...$$  \\[ ...\\]
+blockleftdelimiter = ""
+blockrightdelimiter = ""
+# default inline delimiter is $ ...$ and \\( ...\\)
+#  $ ...$  \\( ...\\)
+inlineleftdelimiter = ""
+inlinerightdelimiter = ""
+# katex extension copy_tex
+# katex  copy_tex
+copytex = true
+# katex extension mhchem
+# katex  mhchem
+mhchem = true
+# mapbox gl js config (mapbox gl js https: //docs.Mapbox.Com/mapbox-gl-js)
+# mapbox gl js  (mapbox gl js https: //docs.Mapbox.Com/mapbox-gl-js)
+[params.Page.Mapbox]
+# access token of mapbox gl js
+# mapbox gl js  access token
+accesstoken = "pk.Eyj1ijoizglsbg9ueneilcjhijoiy2s2czd2m2x3mda0njnmcgxmcjvrzmc2cyj9.Asjv2bnuzufarvxryjsvzq"
+# style for the light theme
+# 
+lightstyle = "mapbox: //styles/mapbox/light-v10? Optimize=true"
+# style for the dark theme
+# 
+darkstyle = "mapbox: //styles/mapbox/dark-v10? Optimize=true"
+# whether to add navigationcontrol (https: //docs.Mapbox.Com/mapbox-gl-js/api/#navigationcontrol)
+#  navigationcontrol (https: //docs.Mapbox.Com/mapbox-gl-js/api/#navigationcontrol)
+navigation = true
+# whether to add geolocatecontrol (https: //docs.Mapbox.Com/mapbox-gl-js/api/#geolocatecontrol)
+#  geolocatecontrol (https: //docs.Mapbox.Com/mapbox-gl-js/api/#geolocatecontrol)
+geolocate = true
+# whether to add scalecontrol (https: //docs.Mapbox.Com/mapbox-gl-js/api/#scalecontrol)
+#  scalecontrol (https: //docs.Mapbox.Com/mapbox-gl-js/api/#scalecontrol)
+scale = true
+# whether to add fullscreencontrol (https: //docs.Mapbox.Com/mapbox-gl-js/api/#fullscreencontrol)
+#  fullscreencontrol (https: //docs.Mapbox.Com/mapbox-gl-js/api/#fullscreencontrol)
+fullscreen = true
+# social share links in post page
+# 
+[params.Page.Share]
+enable = true
+twitter = true
+facebook = true
+linkedin = false
+whatsapp = false
+pinterest = false
+tumblr = false
+hackernews = true
+reddit = false
+vk = false
+buffer = false
+xing = false
+line = true
+instapaper = false
+pocket = false
+digg = false
+stumbleupon = false
+flipboard = false
+weibo = true
+renren = false
+myspace = false
+blogger = false
+baidu = false
+odnoklassniki = false
+evernote = false
+skype = false
+trello = false
+mix = false
+
+# third-party library config
+# 
+[params.Page.Library]
+[params.Page.Library.Css]
+# somecss = "some.Css"
+# located in "assets/"  "assets/"
+# or 
+# somecss = "https: //cdn.Example.Com/some.Css"
+[params.Page.Library.Js]
+# somejavascript = "some.Js"
+# located in "assets/"  "assets/"
+# or 
+# somejavascript = "https: //cdn.Example.Com/some.Js"
+# page seo config
+#  seo 
+[params.Page.Seo]
+# image url
+#  url
+images = []
+# publisher info
+# 
+[params.Page.Seo.Publisher]
+name = "xxxx"
+logourl = "/images/avatar.Png"
+
+# site verification code for google/bing/yandex/pinterest/baidu
+# , google/bing/yandex/pinterest/baidu
+[params.Verification]
+google = ""
+bing = ""
+yandex = ""
+pinterest = ""
+baidu = ""
+
+# site seo config
+#  seo 
+[params.Seo]
+# image url
+#  url
+image = "/images/apple-devices-preview.Png"
+# thumbnail url
+#  url
+thumbnailurl = "/images/screenshot.Png"
+
+# analytics config
+# 
+[params.Analytics]
+enable = true
+# google analytics
+[params.Analytics.Google]
+# [ua-xxxxxxxx-x] google analytics code
+# [ua-xxxxxxxx-x] 
+id = ""
+# whether to use gtag linked
+# gtag
+gtag = false
+# whether to anonymize ip
+#  ip
+anonymizeip = true
+# fathom analytics
+[params.Analytics.Fathom]
+id = ""
+# server url for your tracker if you're self hosting
+# 
+server = ""
+[params.Analytics.Yandex]
+id = "70532758"
+
+# cookie consent config
+# cookie 
+[params.Cookieconsent]
+enable = false
+# text strings used for cookie consent banner
+#  cookie 
+[params.Cookieconsent.Content]
+message = ""
+dismiss = ""
+link = ""
+
+# cdn config for third-party library files
+#  cdn 
+[params.Cdn]
+# cdn data file name, disabled by default
+# ("jsdelivr.Yml")
+# located in "themes/ublogger/assets/data/cdn/" directory
+# you can store your own data files in the same path under your project:
+# "assets/data/cdn/"
+# cdn , 
+# ("jsdelivr.Yml")
+#  "themes/ublogger/assets/data/cdn/" 
+# :
+# "assets/data/cdn/"
+data = "jsdelivr.Yml"
+
+# compatibility config
+# 
+[params.Compatibility]
+# whether to use polyfill.Io to be compatible with older browsers
+#  polyfill.Io 
+polyfill = false
+# whether to use object-fit-images to be compatible with older browsers
+#  object-fit-images 
+objectfit = false
+
+# markup related configuration in hugo
+# hugo 
+[markup]
+# syntax highlighting (https: //gohugo.Io/content-management/syntax-highlighting)
+#  (https: //gohugo.Io/content-management/syntax-highlighting)
+[markup.Highlight]
+codefences = true
+guesssyntax = true
+linenos = true
+linenumbersintable = true
+noclasses = false
+# goldmark is from hugo 0.60 the default library used for markdown
+# goldmark  hugo 0.60  markdown 
+[markup.Goldmark]
+[markup.Goldmark.Extensions]
+definitionlist = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+tasklist = true
+typographer = true
+[markup.Goldmark.Renderer]
+# whether to use html tags directly in the document
+#  html 
+unsafe = true
+# table of contents settings
+# 
+[markup.Tableofcontents]
+startlevel = 2
+endlevel = 6
+
+# author config
+# 
+[author]
+name = "upagge.En"
+
+# sitemap config
+# 
+[sitemap]
+changefreq = "weekly"
+filename = "sitemap.Xml"
+priority = 0.5
+
+# permalinks config (https: //gohugo.Io/content-management/urls/#permalinks)
+# permalinks  (https: //gohugo.Io/content-management/urls/#permalinks)
+[permalinks]
+# posts = ": year/: month/: filename"
+posts = ": filename"
+
+# privacy config (https: //gohugo.Io/about/hugo-and-gdpr/)
+#  (https: //gohugo.Io/about/hugo-and-gdpr/)
+[privacy]
+# privacy of the google analytics (replaced by params.Analytics.Google)
+# google analytics  ( params.Analytics.Google )
+[privacy.Googleanalytics]
+# ...
+[privacy.Twitter]
+enablednt = true
+[privacy.Youtube]
+privacyenhanced = true
+
+# options to make output .Md files
+#  markdown 
+[mediatypes]
+[mediatypes."text/plain"]
+suffixes = ["md"]
+
+# options to make output .Md files
+#  markdown 
+[outputformats.Markdown]
+mediatype = "text/plain"
+isplaintext = true
+ishtml = false
+
+# options to make hugo output files
+#  hugo 
+[outputs]
+home = ["html", "rss", "json"]
+page = ["html", "markdown"]
+section = ["html", "rss"]
+taxonomy = ["html", "rss"]
+taxonomyterm = ["html"]
